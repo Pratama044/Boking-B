@@ -37,9 +37,9 @@ public class PrintService {
 	    String vehicleType = "";
 	    for (Vehicle vehicle : listVehicle) {
 	    	if (vehicle instanceof Car) {
-				vehicleType = "Mobil";
+				vehicleType = "Car";
 			}else {
-				vehicleType = "Motor";
+				vehicleType = "Motorcyle";
 			}
 	    	System.out.format(formatTable, number, vehicle.getVehiclesId(), vehicle.getColor(), vehicle.getBrand(), vehicle.getTransmisionType(), vehicle.getYearRelease(), vehicleType);
 	    	number++;

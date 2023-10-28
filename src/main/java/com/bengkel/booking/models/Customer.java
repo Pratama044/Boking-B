@@ -16,8 +16,9 @@ public class Customer {
 	private String password;
 	private List<Vehicle> vehicles;
 	private int maxNumberOfService;
+	private String member;
 
-	public Customer(String customerId, String name, String address, String password, List<Vehicle> vehicles) {
+	public Customer(String customerId, String name, String address, String password, List<Vehicle> vehicles, String member) {
 		super();
 		this.customerId = customerId;
 		this.name = name;
@@ -25,6 +26,7 @@ public class Customer {
 		this.password = password;
 		this.vehicles = vehicles;
 		this.maxNumberOfService = 1;
+		this.member = member;
 	}
 
 }
